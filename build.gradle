@@ -13,9 +13,11 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.amqp:spring-rabbit-stream'
 	implementation 'org.springframework.boot:spring-boot-starter-amqp'
 	implementation 'org.springframework.boot:spring-boot-starter-integration'
 	implementation 'org.springframework.integration:spring-integration-amqp'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.amqp:spring-rabbit-test'
 	testImplementation 'org.springframework.integration:spring-integration-test'
